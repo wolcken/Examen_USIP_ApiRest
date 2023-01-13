@@ -1,0 +1,54 @@
+####Listar Usuarios
+GET http://127.0.0.1:5000/api/usuarios/
+Accept: application/json
+
+
+
+####Mostrar un solo Usuario mediante el id
+GET http://127.0.0.1:5000/api/usuarios/2
+Accept: application/json
+
+
+
+####Registrar Usuario
+POST http://127.0.0.1:5000/api/usuarios/add
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": 5,
+    "nombre": "Luis",
+    "apellido": "Velasco",
+    "edad": 29
+}
+
+
+
+####Actualizar Usuario
+PUT http://127.0.0.1:5000/api/usuarios/update/5
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre": "Lucho",
+    "apellido": "Velasquez",
+    "edad": 30
+}
+
+
+
+###Eliminar Usuario
+DELETE http://127.0.0.1:5000/api/usuarios/delete/5
+Accept: application/json
+
+
+
+###Promedio de Usuarios
+GET http://127.0.0.1:5000/api/usuarios/promedio-edad
+Accept: application/json
+
+
+
+###Status de la API REST
+GET http://127.0.0.1:5000/api/usuarios/status
+Accept: application/json
